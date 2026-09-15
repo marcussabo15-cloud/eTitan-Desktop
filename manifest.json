@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "eTitan Assistant",
+  "version": "1.0.0",
+  "description": "eTitan tananyag-navigációs segéd",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "eTitan Assistant"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://etitan.hu/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
